@@ -1,0 +1,37 @@
+<header class="action-bar fixed-top">
+	<!-- voltar href="javascript: void(0);" -->
+	<a href="javascript: void(1);" class="app-icon action">
+		<i class="icon-gdg"></i>
+	</a>
+	<h1 class="title">ACHE FÁCIL</h1>
+	<ul class="actions pull-right" ng-style="myStyle">
+		<li>
+			
+			<a href="" class="action" title="" ng-click="myStyle={'width':'70%'}">
+			<i class="icon-search"></i>	
+			</a>
+			<input type="search" ng-style="myStyle" ng-model="search" class="input-text" placeholder="buscar">
+		</li></ul>
+</header><!-- /header -->
+
+<nav class="tab-fixed">
+	<ul class="tab-inner">
+			<li><a href="#/agenda" data-ignore="true"><i class="icon-view-as-list"></i></a></li>
+			<li  class="active"><a href="#/servicos"><i class="icon-group"></i></a> </li>
+		</ul>
+</nav>
+
+<div class="content" >
+	<div class="app-content">
+		<ul class="list inset">
+			<li class="list-divider">SERVIÇOS</li>
+			<li class="list-item-multi-line selectable" ng-repeat="item in servicos " ng-bind="item.id_cat == param">
+				<a href="#/empresa/{{item.id}}">
+					{{param}}-{{item.id_cat}}
+					<h4 class="title-agenda"> {{item.company}}</h4>
+					<p>{{item.email}}</p>
+				</a>
+			</li> 
+		</ul>
+	</div>
+</div>

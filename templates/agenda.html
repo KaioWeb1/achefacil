@@ -1,0 +1,36 @@
+<header class="action-bar fixed-top">
+	<!-- voltar href="javascript: void(0);" -->
+	<a href="javascript: void(0);" class="app-icon action">
+		<i class="icon-gdg"></i>
+	</a>
+	<h1 class="title">ACHE FÁCIL</h1>
+	<ul class="actions pull-right" ng-style="myStyle">
+		<li>
+			
+			<a href="" class="action" title="" ng-click="myStyle={'width':'70%'}">
+			<i class="icon-search"></i>	
+			</a>
+			<input type="search" ng-style="myStyle" ng-model="search" class="input-text" placeholder="buscar">
+		</li></ul>
+	<br>
+</header><!-- /header -->
+	
+<nav class="tab-fixed">
+	<ul class="tab-inner">
+			<li class="active"><a href="#/agenda" data-ignore="true"><i class="icon-view-as-list"></i></a></li>
+			<li><a href="#/servicos"><i class="icon-group"></i></a> </li>
+		</ul>
+</nav>
+
+<div class="content">
+	<div class="app-content">
+		<ul class="list inset">
+			<li class="list-divider">CATEGORIAS </li>
+			<li class="list-item-multi-line selectable" ng-repeat="item in agenda | filter: search | orderBy: 'id_cat'">
+			<a href="#/servicos/{{item.id_cat}}" ng-click="Servicos.getServicos()" title="">
+					<h4 class="title-agenda"> {{item.namecat}} </h4>
+			</a>	
+			</li> 
+		</ul>
+	</div>
+</div>

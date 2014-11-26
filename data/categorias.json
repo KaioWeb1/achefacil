@@ -1,0 +1,61 @@
+[
+
+	{
+		"id_cat": 1,
+		"namecat":"Advocacia"
+	},
+	{
+		"id_cat": 2,
+		"namecat":"Animais"
+	},
+	{
+		"id_cat": 3,
+		"namecat":"Autos, Peças e Acessórios"
+	},
+	{
+		"id_cat": 4,
+		"namecat":"Casa & Costrução"
+	},
+	{
+		"id_cat": 5,
+		"namecat":"Contabilidade"
+	},
+	{
+		"id_cat": 6,
+		"namecat":"Diversos"
+	},
+	{
+		"id_cat": 7,
+		"namecat":"Educação"
+	},
+	{
+		"id_cat": 8,
+		"namecat":"Entretenimento"
+	},
+	{
+		"id_cat": 9,
+		"namecat":"Gastronomia"
+	},
+	{
+		"id_cat": 10,
+		"namecat":"Livrarias e Bibliotecas"
+	},
+	{
+		"id_cat": 11,
+		"namecat":"Moda & Beleza"
+	},
+	{
+		"id_cat": 12,
+		"namecat":"Saúde"
+	},
+	{
+		"id_cat": 13,
+		"namecat":"Serviços"
+	}
+]
+
+
+
+
+
+
